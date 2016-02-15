@@ -2,7 +2,7 @@ Overview
 --------
 
 This charm creates a local Pypi caching mirror.
-
+Original code: https://jujucharms.com/u/chris-gondolin/pypi-mirror/trusty/1
 
 Usage
 -----
