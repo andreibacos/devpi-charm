@@ -57,7 +57,7 @@ def start_devpi_server():
         output = subprocess.check_output(server_cmd + ["--status"])
         if output.startswith("server is running"):
             subprocess.check_call(server_cmd + ["--stop"])
-        subprocess.check_call(server_cmd + ["--host=0.0.0.0", "--start"])
+        subprocess.check_call(server_cmd + ["--host=0.0.0.0", "--port=%d" % conf.port(), "--serverdir=%s" % conf.server_dir(), "--start"])
     except subprocess.CalledProcessError as e:
         log("CHARM: Error restarting devpi-server - {}".format(e))
 

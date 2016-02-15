@@ -25,3 +25,9 @@ class Config:
             log("CHARM: mirror user '{}' has not been created".format(self.mirror_user()))
             raise KeyError
         return mirror_userinfo
+
+    def port(self):
+        return int(config("port"))
+
+    def server_dir(self):
+        return str(config("server_dir"))

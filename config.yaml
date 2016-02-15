@@ -19,3 +19,12 @@ options:
     description: |
         A comma-separated list of nagios servicegroups.
         If left empty, the nagios_context will be used as the servicegroup
+  port:
+    default: "3141"
+    type: int
+    description: "Port used by devpi-server"
+  server_dir:
+    default: "~/.devpi/server"
+    type: string
+    description: "Directory for server data"
+
