@@ -31,3 +31,6 @@ class Config:
 
     def server_dir(self):
         return str(config("server_dir"))
+
+    def master(self):
+        return str(config("master"))

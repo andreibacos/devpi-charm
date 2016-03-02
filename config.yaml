@@ -27,4 +27,7 @@ options:
     default: "~/.devpi/server"
     type: string
     description: "Directory for server data"
-
+  master:
+    default: ""
+    type: string
+    description: "Master devpi server"
